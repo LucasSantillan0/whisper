@@ -6,6 +6,7 @@ import speech_recognition as sr
 import faster_whisper
 
 from behaviors.General import GeneralBehavior
+from chat.Chat import Chat
 
 model_size = "large-v3"
 
@@ -18,10 +19,11 @@ from time import sleep
 from sys import platform
 from mic_control import mute_mic, unmute_mic
 from utils.ignore_hashtags import ignoreHasthags
+from chat.Chat import Chat
 
 engine = pyttsx3.init()
 engine.setProperty("voice", "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ES-MX_SABINA_11.0")
-engine.setProperty("rate",125)
+engine.setProperty("rate",205)
 
 messages = [{"role":"system", "content":"Siempre contestaré en español. Mi nombre es pepeue"},]
 
@@ -83,7 +85,7 @@ def main():
         try:
             with source:
                 recorder.adjust_for_ambient_noise(source)                
-                audio_trigger_data = recorder.listen(source, 500, phrase_time_limit=2000)
+                audio_trigger_data = recorder.listen(source, 1500, phrase_time_limit=6000)
             now = datetime.utcnow()
             data = audio_trigger_data.get_raw_data() 
             # Pull raw recorded audio from the queue.
@@ -111,15 +113,13 @@ def main():
             print(text)
             if text=="":
               continue
+            if text=="Thanks for watching!":
+              continue
             messages.append({ "role" : "user" , "content":text.__str__()})
-            payload = {
-					    "messages":messages,
-						  "stream":"false",
-        		 "max_tokens":"-1"
-				    }
-            print(payload)
+           
             try:
-                response = GeneralBehavior.respond(text.__str__())
+                Chat.addMessage('user',text.__str__())
+                response = GeneralBehavior.respond()
                # post = requests.post('http://192.168.1.99:1234/v1/chat/completions',json=payload ,timeout=100000)
             
                 #response = post.json()["choices"][0]["message"]["content"]

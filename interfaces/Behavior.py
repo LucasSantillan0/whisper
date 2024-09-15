@@ -8,11 +8,11 @@ class Behavior:
     strategies: List[Strategy.Strategy] = []
     
     @classmethod
-    def respond(cls:'Behavior', userInput:str) -> str:
+    def respond(cls:'Behavior') -> str:
         for strategy in cls.strategies:
             
-            if(strategy.isAppropriate(userInput)):
-                return strategy.run(userInput)
+            if(strategy.isAppropriate()):
+                return strategy.run()
     
     @classmethod
     def addStrategy(cls:'Behavior', strategy:Strategy.Strategy): 

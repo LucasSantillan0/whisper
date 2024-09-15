@@ -1,7 +1,13 @@
+import re
+
+
 class Strategy:
-    @staticmethod
-    def isAppropriate(userInput:str) -> bool:
+    @classmethod
+    def isAppropriate() -> bool:
         pass
-    @staticmethod
-    def run(userInput:str):
+    @classmethod
+    def run():
         pass
+    @classmethod
+    def searchWord (string:str, word:str) -> bool:
+        return re.search(rf'\b{word}\b', string, re.IGNORECASE)

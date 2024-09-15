@@ -1,10 +1,14 @@
-from interfaces import Strategy
+from interfaces.Strategy import Strategy
+from services.LLM import LLM
+from chat.Chat import Chat
 
 
-class AskToLLM(Strategy.Strategy):
+class AskToLLM(Strategy):
     @staticmethod
-    def isAppropriate(userInput:str):
+    def isAppropriate():
         return True
     @staticmethod
-    def run (userInput:str):
-        return 'test'
+    def run ():
+        response = LLM.call()
+        Chat.addMessage('assistant',response)
+        return response

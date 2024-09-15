@@ -24,19 +24,35 @@
         "documentation": {}
     },
     {
-        "label": "Strategy",
-        "importPath": "interfaces",
-        "description": "interfaces",
+        "label": "AskToLLM",
+        "importPath": "strategies.AskToLLM",
+        "description": "strategies.AskToLLM",
         "isExtraImport": true,
-        "detail": "interfaces",
+        "detail": "strategies.AskToLLM",
         "documentation": {}
     },
     {
-        "label": "AskToLLM",
-        "importPath": "strategies",
-        "description": "strategies",
+        "label": "PlayMusic",
+        "importPath": "strategies.PlayMusic",
+        "description": "strategies.PlayMusic",
         "isExtraImport": true,
-        "detail": "strategies",
+        "detail": "strategies.PlayMusic",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -56,12 +72,93 @@
         "documentation": {}
     },
     {
+        "label": "Message",
+        "importPath": "chat",
+        "description": "chat",
+        "isExtraImport": true,
+        "detail": "chat",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "re",
         "description": "re",
         "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces.Strategy",
+        "description": "interfaces.Strategy",
+        "isExtraImport": true,
+        "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces.Strategy",
+        "description": "interfaces.Strategy",
+        "isExtraImport": true,
+        "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "LLM",
+        "importPath": "services.LLM",
+        "description": "services.LLM",
+        "isExtraImport": true,
+        "detail": "services.LLM",
         "documentation": {}
     },
     {
@@ -206,15 +303,6 @@
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
         "label": "pyttsx3",
         "kind": 6,
         "isExtraImport": true,
@@ -350,8 +438,35 @@
         "kind": 6,
         "importPath": "behaviors.General",
         "description": "behaviors.General",
-        "peekOfCode": "class GeneralBehavior(Behavior.Behavior):\n    pass\n   # @staticmethod\n   # def respond(self:'Behavior', userInput:str):\n   #     return super().respond(userInput)\n   # \n   # @staticmethod\n   # def addStrategy(self:'Behavior', strategy:Strategy.Strategy): \n   #     return super().addStrategy(strategy)\nGeneralBehavior.addStrategy(AskToLLM.AskToLLM)",
+        "peekOfCode": "class GeneralBehavior(Behavior.Behavior):\n    pass\nGeneralBehavior.addStrategy(PlayMusic)\nGeneralBehavior.addStrategy(AskToLLM)",
         "detail": "behaviors.General",
+        "documentation": {}
+    },
+    {
+        "label": "MessageDict",
+        "kind": 6,
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "peekOfCode": "class MessageDict(TypedDict, total=False):\n    content: str\n    role: str\nclass Chat:\n    messages:List[MessageDict] = [{ \"role\" : \"system\" , \"content\":\"Cuando te parezca adecuado puedes responder con: 'MUSICA' para reproducir musica, o 'VERDE' para cambiar el color a verde\"}]\n    @classmethod\n    def getLastMessage (cls:'Chat') ->str :\n        return cls.messages[len(cls.messages)-1].get('content')\n    @classmethod\n    def addMessage (cls:'Chat',role:str, message:str):",
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "kind": 6,
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "peekOfCode": "class Chat:\n    messages:List[MessageDict] = [{ \"role\" : \"system\" , \"content\":\"Cuando te parezca adecuado puedes responder con: 'MUSICA' para reproducir musica, o 'VERDE' para cambiar el color a verde\"}]\n    @classmethod\n    def getLastMessage (cls:'Chat') ->str :\n        return cls.messages[len(cls.messages)-1].get('content')\n    @classmethod\n    def addMessage (cls:'Chat',role:str, message:str):\n        cls.messages.append({\"role\": role,\"content\":message})\n        if(len(cls.messages) >12) :\n            cls.messages.pop(1)",
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "chat.Message",
+        "description": "chat.Message",
+        "peekOfCode": "class Message:\n    def __init__(self, **kwargs ) :\n        self.role = kwargs.get('role', 'user')\n        self.content = kwargs.get('content', '')\n    def getText (self:'Message') -> str:\n        return self.content",
+        "detail": "chat.Message",
         "documentation": {}
     },
     {
@@ -359,7 +474,7 @@
         "kind": 6,
         "importPath": "interfaces.Behavior",
         "description": "interfaces.Behavior",
-        "peekOfCode": "class Behavior:\n    strategies: List[Strategy.Strategy] = []\n    @classmethod\n    def respond(cls:'Behavior', userInput:str) -> str:\n        for strategy in cls.strategies:\n            if(strategy.isAppropriate(userInput)):\n                return strategy.run(userInput)\n    @classmethod\n    def addStrategy(cls:'Behavior', strategy:Strategy.Strategy): \n        cls.strategies.append(strategy)",
+        "peekOfCode": "class Behavior:\n    strategies: List[Strategy.Strategy] = []\n    @classmethod\n    def respond(cls:'Behavior') -> str:\n        for strategy in cls.strategies:\n            if(strategy.isAppropriate()):\n                return strategy.run()\n    @classmethod\n    def addStrategy(cls:'Behavior', strategy:Strategy.Strategy): \n        cls.strategies.append(strategy)",
         "detail": "interfaces.Behavior",
         "documentation": {}
     },
@@ -368,8 +483,17 @@
         "kind": 6,
         "importPath": "interfaces.Strategy",
         "description": "interfaces.Strategy",
-        "peekOfCode": "class Strategy:\n    @staticmethod\n    def isAppropriate(userInput:str) -> bool:\n        pass\n    @staticmethod\n    def run(userInput:str):\n        pass",
+        "peekOfCode": "class Strategy:\n    @classmethod\n    def isAppropriate() -> bool:\n        pass\n    @classmethod\n    def run():\n        pass\n    @classmethod\n    def searchWord (string:str, word:str) -> bool:\n        return re.search(rf'\\b{word}\\b', string, re.IGNORECASE)",
         "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "LLM",
+        "kind": 6,
+        "importPath": "services.LLM",
+        "description": "services.LLM",
+        "peekOfCode": "class LLM:\n    @classmethod\n    def call (cls:'LLM') -> str:\n         payload = {\n\t\t\t\t \"messages\":Chat.messages,\n\t\t\t\t \"stream\":\"false\",\n        \t\t \"max_tokens\":\"-1\"}\n         post = requests.post('http://192.168.1.99:1234/v1/chat/completions',json=payload ,timeout=100000)\n         response = post.json()[\"choices\"][0][\"message\"][\"content\"]\n         return response",
+        "detail": "services.LLM",
         "documentation": {}
     },
     {
@@ -377,8 +501,17 @@
         "kind": 6,
         "importPath": "strategies.AskToLLM",
         "description": "strategies.AskToLLM",
-        "peekOfCode": "class AskToLLM(Strategy.Strategy):\n    @staticmethod\n    def isAppropriate(userInput:str):\n        return True\n    @staticmethod\n    def run (userInput:str):\n        return 'test'",
+        "peekOfCode": "class AskToLLM(Strategy):\n    @staticmethod\n    def isAppropriate():\n        return True\n    @staticmethod\n    def run ():\n        response = LLM.call()\n        Chat.addMessage('assistant',response)\n        return response",
         "detail": "strategies.AskToLLM",
+        "documentation": {}
+    },
+    {
+        "label": "PlayMusi",
+        "kind": 6,
+        "importPath": "strategies.PlayMusic",
+        "description": "strategies.PlayMusic",
+        "peekOfCode": "class PlayMusic (Strategy):\n    @classmethod\n    def isAppropriate(cls:'PlayMusic') -> bool:\n        return cls.searchWord(Chat.getMessage(len(Chat.messages)-2),'MUSIC' ) and  cls.searchWord( Chat.getLastMessage() ,'Bien') \n    @classmethod\n    def run():\n        pass",
+        "detail": "strategies.PlayMusic",
         "documentation": {}
     },
     {
@@ -665,7 +798,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "engine = pyttsx3.init()\nengine.setProperty(\"voice\", \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0\")\nengine.setProperty(\"rate\",125)\nmessages = [{\"role\":\"system\", \"content\":\"Siempre contestaré en español. Mi nombre es pepeue\"},]\ndef main():\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',",
+        "peekOfCode": "engine = pyttsx3.init()\nengine.setProperty(\"voice\", \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0\")\nengine.setProperty(\"rate\",205)\nmessages = [{\"role\":\"system\", \"content\":\"Siempre contestaré en español. Mi nombre es pepeue\"},]\ndef main():\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',",
         "detail": "main",
         "documentation": {}
     },
