@@ -1,5 +1,61 @@
 [
     {
+        "label": "Behavior",
+        "importPath": "interfaces",
+        "description": "interfaces",
+        "isExtraImport": true,
+        "detail": "interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces",
+        "description": "interfaces",
+        "isExtraImport": true,
+        "detail": "interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces",
+        "description": "interfaces",
+        "isExtraImport": true,
+        "detail": "interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces",
+        "description": "interfaces",
+        "isExtraImport": true,
+        "detail": "interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "AskToLLM",
+        "importPath": "strategies",
+        "description": "strategies",
+        "isExtraImport": true,
+        "detail": "strategies",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Self",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -130,6 +186,14 @@
         "importPath": "faster_whisper",
         "description": "faster_whisper",
         "detail": "faster_whisper",
+        "documentation": {}
+    },
+    {
+        "label": "GeneralBehavior",
+        "importPath": "behaviors.General",
+        "description": "behaviors.General",
+        "isExtraImport": true,
+        "detail": "behaviors.General",
         "documentation": {}
     },
     {
@@ -279,6 +343,42 @@
         "importPath": "win32gui",
         "description": "win32gui",
         "detail": "win32gui",
+        "documentation": {}
+    },
+    {
+        "label": "GeneralBehavior",
+        "kind": 6,
+        "importPath": "behaviors.General",
+        "description": "behaviors.General",
+        "peekOfCode": "class GeneralBehavior(Behavior.Behavior):\n    pass\n   # @staticmethod\n   # def respond(self:'Behavior', userInput:str):\n   #     return super().respond(userInput)\n   # \n   # @staticmethod\n   # def addStrategy(self:'Behavior', strategy:Strategy.Strategy): \n   #     return super().addStrategy(strategy)\nGeneralBehavior.addStrategy(AskToLLM.AskToLLM)",
+        "detail": "behaviors.General",
+        "documentation": {}
+    },
+    {
+        "label": "Behavior",
+        "kind": 6,
+        "importPath": "interfaces.Behavior",
+        "description": "interfaces.Behavior",
+        "peekOfCode": "class Behavior:\n    strategies: List[Strategy.Strategy] = []\n    @classmethod\n    def respond(cls:'Behavior', userInput:str) -> str:\n        for strategy in cls.strategies:\n            if(strategy.isAppropriate(userInput)):\n                return strategy.run(userInput)\n    @classmethod\n    def addStrategy(cls:'Behavior', strategy:Strategy.Strategy): \n        cls.strategies.append(strategy)",
+        "detail": "interfaces.Behavior",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "kind": 6,
+        "importPath": "interfaces.Strategy",
+        "description": "interfaces.Strategy",
+        "peekOfCode": "class Strategy:\n    @staticmethod\n    def isAppropriate(userInput:str) -> bool:\n        pass\n    @staticmethod\n    def run(userInput:str):\n        pass",
+        "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "AskToLLM",
+        "kind": 6,
+        "importPath": "strategies.AskToLLM",
+        "description": "strategies.AskToLLM",
+        "peekOfCode": "class AskToLLM(Strategy.Strategy):\n    @staticmethod\n    def isAppropriate(userInput:str):\n        return True\n    @staticmethod\n    def run (userInput:str):\n        return 'test'",
+        "detail": "strategies.AskToLLM",
         "documentation": {}
     },
     {
@@ -583,7 +683,7 @@
         "kind": 2,
         "importPath": "mic_control",
         "description": "mic_control",
-        "peekOfCode": "def mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
+        "peekOfCode": "def mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    #for x in range(50):\n        #win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
         "detail": "mic_control",
         "documentation": {}
     },
@@ -601,7 +701,7 @@
         "kind": 5,
         "importPath": "mic_control",
         "description": "mic_control",
-        "peekOfCode": "WM_APPCOMMAND = 0x319\nWM_BASE_HEX = 0xFFFF + 1\nAPPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()",
+        "peekOfCode": "WM_APPCOMMAND = 0x319\nWM_BASE_HEX = 0xFFFF + 1\nAPPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    #for x in range(50):\n        #win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()",
         "detail": "mic_control",
         "documentation": {}
     },
@@ -610,7 +710,7 @@
         "kind": 5,
         "importPath": "mic_control",
         "description": "mic_control",
-        "peekOfCode": "WM_BASE_HEX = 0xFFFF + 1\nAPPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):",
+        "peekOfCode": "WM_BASE_HEX = 0xFFFF + 1\nAPPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    #for x in range(50):\n        #win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):",
         "detail": "mic_control",
         "documentation": {}
     },
@@ -619,7 +719,7 @@
         "kind": 5,
         "importPath": "mic_control",
         "description": "mic_control",
-        "peekOfCode": "APPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
+        "peekOfCode": "APPCOMMAND_MICROPHONE_VOLUME_DOWN = WM_BASE_HEX * 25\nAPPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    #for x in range(50):\n        #win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
         "detail": "mic_control",
         "documentation": {}
     },
@@ -628,7 +728,7 @@
         "kind": 5,
         "importPath": "mic_control",
         "description": "mic_control",
-        "peekOfCode": "APPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
+        "peekOfCode": "APPCOMMAND_MICROPHONE_VOLUME_UP = WM_BASE_HEX * 26\ndef mute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    #for x in range(50):\n        #win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_DOWN)\ndef unmute_mic():\n    hwnd_active = win32gui.GetForegroundWindow()\n    for x in range(50):\n        win32api.SendMessage(hwnd_active, WM_APPCOMMAND, None, APPCOMMAND_MICROPHONE_VOLUME_UP)",
         "detail": "mic_control",
         "documentation": {}
     },

@@ -5,6 +5,8 @@ import numpy as np
 import speech_recognition as sr
 import faster_whisper
 
+from behaviors.General import GeneralBehavior
+
 model_size = "large-v3"
 
 import torch
@@ -83,7 +85,7 @@ def main():
                 recorder.adjust_for_ambient_noise(source)                
                 audio_trigger_data = recorder.listen(source, 500, phrase_time_limit=2000)
             now = datetime.utcnow()
-            data = audio_trigger_data.get_raw_data()
+            data = audio_trigger_data.get_raw_data() 
             # Pull raw recorded audio from the queue.
                 # If enough time has passed between recordings, consider the phrase complete.
                 # Clear the current working audio buffer to start over with the new data.
@@ -117,13 +119,14 @@ def main():
 				    }
             print(payload)
             try:
-                post = requests.post('http://192.168.1.99:1234/v1/chat/completions',json=payload ,timeout=100000)
+                response = GeneralBehavior.respond(text.__str__())
+               # post = requests.post('http://192.168.1.99:1234/v1/chat/completions',json=payload ,timeout=100000)
             
-                response = post.json()["choices"][0]["message"]["content"]
-            except:
-                print("error during post")
+                #response = post.json()["choices"][0]["message"]["content"]
+            except Exception as e:
+                print("error during post",e)
                 continue
-            messages.append({ "role" : "assistant" , "content":response})
+          #  messages.append({ "role" : "assistant" , "content":response})
             mute_mic()
             engine.say(response)
             engine.runAndWait()
