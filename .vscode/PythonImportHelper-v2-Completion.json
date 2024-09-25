@@ -56,6 +56,70 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Unpack",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -72,6 +136,38 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Message",
         "importPath": "chat",
         "description": "chat",
@@ -80,173 +176,43 @@
         "documentation": {}
     },
     {
-        "label": "re",
-        "kind": 6,
+        "label": "SpotifyService",
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
         "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
+        "label": "SpotifyService",
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
-        "label": "Chat",
-        "importPath": "chat.Chat",
-        "description": "chat.Chat",
+        "label": "SpotifyService",
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
         "isExtraImport": true,
-        "detail": "chat.Chat",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
-        "label": "Chat",
-        "importPath": "chat.Chat",
-        "description": "chat.Chat",
+        "label": "SpotifyService",
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
         "isExtraImport": true,
-        "detail": "chat.Chat",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
-        "label": "Chat",
-        "importPath": "chat.Chat",
-        "description": "chat.Chat",
+        "label": "SpotifyService",
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
         "isExtraImport": true,
-        "detail": "chat.Chat",
-        "documentation": {}
-    },
-    {
-        "label": "Chat",
-        "importPath": "chat.Chat",
-        "description": "chat.Chat",
-        "isExtraImport": true,
-        "detail": "chat.Chat",
-        "documentation": {}
-    },
-    {
-        "label": "Chat",
-        "importPath": "chat.Chat",
-        "description": "chat.Chat",
-        "isExtraImport": true,
-        "detail": "chat.Chat",
-        "documentation": {}
-    },
-    {
-        "label": "Strategy",
-        "importPath": "interfaces.Strategy",
-        "description": "interfaces.Strategy",
-        "isExtraImport": true,
-        "detail": "interfaces.Strategy",
-        "documentation": {}
-    },
-    {
-        "label": "Strategy",
-        "importPath": "interfaces.Strategy",
-        "description": "interfaces.Strategy",
-        "isExtraImport": true,
-        "detail": "interfaces.Strategy",
-        "documentation": {}
-    },
-    {
-        "label": "LLM",
-        "importPath": "services.LLM",
-        "description": "services.LLM",
-        "isExtraImport": true,
-        "detail": "services.LLM",
-        "documentation": {}
-    },
-    {
-        "label": "glob",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "glob",
-        "description": "glob",
-        "detail": "glob",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "shutil",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "shutil",
-        "description": "shutil",
-        "detail": "shutil",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "sysconfig",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sysconfig",
-        "description": "sysconfig",
-        "detail": "sysconfig",
-        "documentation": {}
-    },
-    {
-        "label": "tempfile",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tempfile",
-        "description": "tempfile",
-        "detail": "tempfile",
-        "documentation": {}
-    },
-    {
-        "label": "site",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "site",
-        "description": "site",
-        "detail": "site",
-        "documentation": {}
-    },
-    {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
@@ -256,6 +222,14 @@
         "importPath": "argparse",
         "description": "argparse",
         "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -294,12 +268,83 @@
         "documentation": {}
     },
     {
-        "label": "torch",
-        "kind": 6,
+        "label": "GeneralBehavior",
+        "importPath": "behaviors.General",
+        "description": "behaviors.General",
         "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
+        "detail": "behaviors.General",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "importPath": "chat.Chat",
+        "description": "chat.Chat",
+        "isExtraImport": true,
+        "detail": "chat.Chat",
+        "documentation": {}
+    },
+    {
+        "label": "LLM",
+        "importPath": "services.LLM",
+        "description": "services.LLM",
+        "isExtraImport": true,
+        "detail": "services.LLM",
+        "documentation": {}
+    },
+    {
+        "label": "LLM",
+        "importPath": "services.LLM",
+        "description": "services.LLM",
+        "isExtraImport": true,
+        "detail": "services.LLM",
+        "documentation": {}
+    },
+    {
+        "label": "LLM",
+        "importPath": "services.LLM",
+        "description": "services.LLM",
+        "isExtraImport": true,
+        "detail": "services.LLM",
         "documentation": {}
     },
     {
@@ -308,6 +353,22 @@
         "isExtraImport": true,
         "importPath": "pyttsx3",
         "description": "pyttsx3",
+        "detail": "pyttsx3",
+        "documentation": {}
+    },
+    {
+        "label": "Engine",
+        "importPath": "pyttsx3",
+        "description": "pyttsx3",
+        "isExtraImport": true,
+        "detail": "pyttsx3",
+        "documentation": {}
+    },
+    {
+        "label": "Engine",
+        "importPath": "pyttsx3",
+        "description": "pyttsx3",
+        "isExtraImport": true,
         "detail": "pyttsx3",
         "documentation": {}
     },
@@ -344,22 +405,6 @@
         "documentation": {}
     },
     {
-        "label": "Queue",
-        "importPath": "queue",
-        "description": "queue",
-        "isExtraImport": true,
-        "detail": "queue",
-        "documentation": {}
-    },
-    {
-        "label": "Queue",
-        "importPath": "queue",
-        "description": "queue",
-        "isExtraImport": true,
-        "detail": "queue",
-        "documentation": {}
-    },
-    {
         "label": "sleep",
         "importPath": "time",
         "description": "time",
@@ -373,6 +418,55 @@
         "description": "time",
         "isExtraImport": true,
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "mute_mic",
+        "importPath": "mic_control",
+        "description": "mic_control",
+        "isExtraImport": true,
+        "detail": "mic_control",
+        "documentation": {}
+    },
+    {
+        "label": "unmute_mic",
+        "importPath": "mic_control",
+        "description": "mic_control",
+        "isExtraImport": true,
+        "detail": "mic_control",
         "documentation": {}
     },
     {
@@ -416,6 +510,226 @@
         "documentation": {}
     },
     {
+        "label": "runAppLoop",
+        "importPath": "config.AppLoop",
+        "description": "config.AppLoop",
+        "isExtraImport": true,
+        "detail": "config.AppLoop",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "http",
+        "description": "http",
+        "isExtraImport": true,
+        "detail": "http",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "ChatCompletion",
+        "importPath": "openai.types.chat.chat_completion",
+        "description": "openai.types.chat.chat_completion",
+        "isExtraImport": true,
+        "detail": "openai.types.chat.chat_completion",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "spotipy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "spotipy",
+        "description": "spotipy",
+        "detail": "spotipy",
+        "documentation": {}
+    },
+    {
+        "label": "SpotifyOAuth",
+        "importPath": "spotipy.oauth2",
+        "description": "spotipy.oauth2",
+        "isExtraImport": true,
+        "detail": "spotipy.oauth2",
+        "documentation": {}
+    },
+    {
+        "label": "TrackData",
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "isExtraImport": true,
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces.Strategy",
+        "description": "interfaces.Strategy",
+        "isExtraImport": true,
+        "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy",
+        "importPath": "interfaces.Strategy",
+        "description": "interfaces.Strategy",
+        "isExtraImport": true,
+        "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "bootstrapApplication",
+        "importPath": "config.BootstrapApp",
+        "description": "config.BootstrapApp",
+        "isExtraImport": true,
+        "detail": "config.BootstrapApp",
+        "documentation": {}
+    },
+    {
+        "label": "runConversation",
+        "importPath": "tasks.Conversation",
+        "description": "tasks.Conversation",
+        "isExtraImport": true,
+        "detail": "tasks.Conversation",
+        "documentation": {}
+    },
+    {
         "label": "win32api",
         "kind": 6,
         "isExtraImport": true,
@@ -434,11 +748,37 @@
         "documentation": {}
     },
     {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
         "label": "GeneralBehavior",
         "kind": 6,
         "importPath": "behaviors.General",
         "description": "behaviors.General",
-        "peekOfCode": "class GeneralBehavior(Behavior.Behavior):\n    pass\nGeneralBehavior.addStrategy(PlayMusic)\nGeneralBehavior.addStrategy(AskToLLM)",
+        "peekOfCode": "class GeneralBehavior(Behavior.Behavior):\n    pass\nGeneralBehavior.addStrategy(AskToLLM)",
         "detail": "behaviors.General",
         "documentation": {}
     },
@@ -447,7 +787,7 @@
         "kind": 6,
         "importPath": "chat.Chat",
         "description": "chat.Chat",
-        "peekOfCode": "class MessageDict(TypedDict, total=False):\n    content: str\n    role: str\nclass Chat:\n    messages:List[MessageDict] = [{ \"role\" : \"system\" , \"content\":\"Cuando te parezca adecuado puedes responder con: 'MUSICA' para reproducir musica, o 'VERDE' para cambiar el color a verde\"}]\n    @classmethod\n    def getLastMessage (cls:'Chat') ->str :\n        return cls.messages[len(cls.messages)-1].get('content')\n    @classmethod\n    def addMessage (cls:'Chat',role:str, message:str):",
+        "peekOfCode": "class MessageDict(TypedDict, total=False):\n    content: str\n    role: str\nclass Chat:\n    messages:List[MessageDict] = [{\"role\": \"system\", \"content\":\"Cuando te pida reproducir una cancion usa esta lista: \"+SpotifyService.getSongsString()}]\n    @classmethod\n    def getLastMessage (cls) ->str :\n        message = cls.messages[len(cls.messages)-1].get('content')\n        if message is None:\n            raise Exception(\"Message array is empty\")",
         "detail": "chat.Chat",
         "documentation": {}
     },
@@ -456,7 +796,7 @@
         "kind": 6,
         "importPath": "chat.Chat",
         "description": "chat.Chat",
-        "peekOfCode": "class Chat:\n    messages:List[MessageDict] = [{ \"role\" : \"system\" , \"content\":\"Cuando te parezca adecuado puedes responder con: 'MUSICA' para reproducir musica, o 'VERDE' para cambiar el color a verde\"}]\n    @classmethod\n    def getLastMessage (cls:'Chat') ->str :\n        return cls.messages[len(cls.messages)-1].get('content')\n    @classmethod\n    def addMessage (cls:'Chat',role:str, message:str):\n        cls.messages.append({\"role\": role,\"content\":message})\n        if(len(cls.messages) >12) :\n            cls.messages.pop(1)",
+        "peekOfCode": "class Chat:\n    messages:List[MessageDict] = [{\"role\": \"system\", \"content\":\"Cuando te pida reproducir una cancion usa esta lista: \"+SpotifyService.getSongsString()}]\n    @classmethod\n    def getLastMessage (cls) ->str :\n        message = cls.messages[len(cls.messages)-1].get('content')\n        if message is None:\n            raise Exception(\"Message array is empty\")\n        return message\n    @classmethod\n    def addMessage (cls,role:str, message):",
         "detail": "chat.Chat",
         "documentation": {}
     },
@@ -470,11 +810,65 @@
         "documentation": {}
     },
     {
+        "label": "runAppLoop",
+        "kind": 2,
+        "importPath": "config.AppLoop",
+        "description": "config.AppLoop",
+        "peekOfCode": "def runAppLoop(tasks:List[Callable[[str,Any],None]]):\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',\n                        help=\"Don't use the english model.\")\n    parser.add_argument(\"--energy_threshold\", default=1000,\n                        help=\"Energy level for mic to  detect.\", type=int)\n    parser.add_argument(\"--record_timeout\", default=2,",
+        "detail": "config.AppLoop",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "config.AppLoop",
+        "description": "config.AppLoop",
+        "peekOfCode": "engine = pyttsx3.init()\nengine.setProperty(\"voice\", \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0\")\nengine.setProperty(\"rate\",205)\nmodel_size = \"large-v3\"\ndef runAppLoop(tasks:List[Callable[[str,Any],None]]):\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',",
+        "detail": "config.AppLoop",
+        "documentation": {}
+    },
+    {
+        "label": "model_size",
+        "kind": 5,
+        "importPath": "config.AppLoop",
+        "description": "config.AppLoop",
+        "peekOfCode": "model_size = \"large-v3\"\ndef runAppLoop(tasks:List[Callable[[str,Any],None]]):\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',\n                        help=\"Don't use the english model.\")\n    parser.add_argument(\"--energy_threshold\", default=1000,\n                        help=\"Energy level for mic to  detect.\", type=int)",
+        "detail": "config.AppLoop",
+        "documentation": {}
+    },
+    {
+        "label": "OptionsType",
+        "kind": 6,
+        "importPath": "config.BootstrapApp",
+        "description": "config.BootstrapApp",
+        "peekOfCode": "class OptionsType(TypedDict):\n    tasks:List[Callable[[str,Any],None]]\ndef bootstrapApplication (**kwargs: Unpack[OptionsType]):\n    options: OptionsType = {\n        'tasks' : [],\n    }\n    SpotifyService.getLikedSongs()\n    LLM.initLLM()\n    options.update(kwargs)\n    runAppLoop(options['tasks'])",
+        "detail": "config.BootstrapApp",
+        "documentation": {}
+    },
+    {
+        "label": "bootstrapApplicatio",
+        "kind": 2,
+        "importPath": "config.BootstrapApp",
+        "description": "config.BootstrapApp",
+        "peekOfCode": "def bootstrapApplication (**kwargs: Unpack[OptionsType]):\n    options: OptionsType = {\n        'tasks' : [],\n    }\n    SpotifyService.getLikedSongs()\n    LLM.initLLM()\n    options.update(kwargs)\n    runAppLoop(options['tasks'])\n    pass",
+        "detail": "config.BootstrapApp",
+        "documentation": {}
+    },
+    {
+        "label": "Actio",
+        "kind": 6,
+        "importPath": "interfaces.Action",
+        "description": "interfaces.Action",
+        "peekOfCode": "class Action (ABC):\n    @property\n    @abstractmethod\n    def actionName(self):\n        pass\n    @classmethod\n    @abstractmethod\n    def run(self,data):\n        pass",
+        "detail": "interfaces.Action",
+        "documentation": {}
+    },
+    {
         "label": "Behavior",
         "kind": 6,
         "importPath": "interfaces.Behavior",
         "description": "interfaces.Behavior",
-        "peekOfCode": "class Behavior:\n    strategies: List[Strategy.Strategy] = []\n    @classmethod\n    def respond(cls:'Behavior') -> str:\n        for strategy in cls.strategies:\n            if(strategy.isAppropriate()):\n                return strategy.run()\n    @classmethod\n    def addStrategy(cls:'Behavior', strategy:Strategy.Strategy): \n        cls.strategies.append(strategy)",
+        "peekOfCode": "class Behavior:\n    strategies: List[Strategy.Strategy] = []\n    @classmethod\n    def respond(cls) -> str:\n        for strategy in cls.strategies:\n            if(strategy.isAppropriate()):\n                return strategy.run()\n        return \"No hay estrategia adecuada para responder\"\n    @classmethod\n    def addStrategy(cls, strategy:Strategy.Strategy): ",
         "detail": "interfaces.Behavior",
         "documentation": {}
     },
@@ -483,8 +877,80 @@
         "kind": 6,
         "importPath": "interfaces.Strategy",
         "description": "interfaces.Strategy",
-        "peekOfCode": "class Strategy:\n    @classmethod\n    def isAppropriate() -> bool:\n        pass\n    @classmethod\n    def run():\n        pass\n    @classmethod\n    def searchWord (string:str, word:str) -> bool:\n        return re.search(rf'\\b{word}\\b', string, re.IGNORECASE)",
+        "peekOfCode": "class Strategy(ABC):\n    @classmethod\n    @abstractmethod\n    def isAppropriate(cls) -> bool:\n        pass\n    @abstractmethod\n    @classmethod\n    def run(cls) -> str:\n        pass\n    @abstractmethod",
         "detail": "interfaces.Strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ExternalURLs",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class ExternalURLs(TypedDict):\n    spotify: str\nclass Image(TypedDict):\n    url: str\n    height: int\n    width: int\nclass Restrictions(TypedDict):\n    reason: str\nclass Artist(TypedDict):\n    external_urls: ExternalURLs",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class Image(TypedDict):\n    url: str\n    height: int\n    width: int\nclass Restrictions(TypedDict):\n    reason: str\nclass Artist(TypedDict):\n    external_urls: ExternalURLs\n    href: str\n    id: str",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Restrictions",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class Restrictions(TypedDict):\n    reason: str\nclass Artist(TypedDict):\n    external_urls: ExternalURLs\n    href: str\n    id: str\n    name: str\n    type: str\n    uri: str\nclass Album(TypedDict):",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Artist",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class Artist(TypedDict):\n    external_urls: ExternalURLs\n    href: str\n    id: str\n    name: str\n    type: str\n    uri: str\nclass Album(TypedDict):\n    album_type: str\n    total_tracks: int",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Album",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class Album(TypedDict):\n    album_type: str\n    total_tracks: int\n    available_markets: List[str]\n    external_urls: ExternalURLs\n    href: str\n    id: str\n    images: List[Image]\n    name: str\n    release_date: str",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "ExternalIDs",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class ExternalIDs(TypedDict):\n    isrc: str\n    ean: str\n    upc: str\nclass Track(TypedDict):\n    album: Album\n    artists: List[Artist]\n    available_markets: List[str]\n    disc_number: int\n    duration_ms: int",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "Track",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class Track(TypedDict):\n    album: Album\n    artists: List[Artist]\n    available_markets: List[str]\n    disc_number: int\n    duration_ms: int\n    explicit: bool\n    external_ids: ExternalIDs\n    external_urls: ExternalURLs\n    href: str",
+        "detail": "interfaces.Tracks",
+        "documentation": {}
+    },
+    {
+        "label": "TrackData",
+        "kind": 6,
+        "importPath": "interfaces.Tracks",
+        "description": "interfaces.Tracks",
+        "peekOfCode": "class TrackData(TypedDict):\n    added_at: str\n    track: Track",
+        "detail": "interfaces.Tracks",
         "documentation": {}
     },
     {
@@ -492,8 +958,62 @@
         "kind": 6,
         "importPath": "services.LLM",
         "description": "services.LLM",
-        "peekOfCode": "class LLM:\n    @classmethod\n    def call (cls:'LLM') -> str:\n         payload = {\n\t\t\t\t \"messages\":Chat.messages,\n\t\t\t\t \"stream\":\"false\",\n        \t\t \"max_tokens\":\"-1\"}\n         post = requests.post('http://192.168.1.99:1234/v1/chat/completions',json=payload ,timeout=100000)\n         response = post.json()[\"choices\"][0][\"message\"][\"content\"]\n         return response",
+        "peekOfCode": "class LLM:\n    client = None\n    thread = None\n    tools = None\n    @classmethod\n    def initLLM (cls):\n        cls.tools = [\n        {\n            \"type\":\"function\",\n            \"function\": {",
         "detail": "services.LLM",
+        "documentation": {}
+    },
+    {
+        "label": "SpotifyService",
+        "kind": 6,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "class SpotifyService:\n    likedSongs:List[TrackData]=[]\n    @classmethod\n    def playSong(cls, song:str):\n        print(song)\n        devices = sp.devices()\n        print(devices)\n        if len(devices['devices']) == 0:\n            print(\"No hay dispositivos activos para reproducción.\")\n            return",
+        "detail": "services.Spotify",
+        "documentation": {}
+    },
+    {
+        "label": "SPOTIPY_CLIENT_ID",
+        "kind": 5,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "SPOTIPY_CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')\nSPOTIPY_CLIENT_SECRET =  os.getenv('SPOTIPY_CLIENT_SECRET')\nSPOTIPY_REDIRECT_URI = os.getenv('SPOTIPY_REDIRECT_URI')\nscope = \"user-modify-playback-state user-read-playback-state playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-modify user-library-read user-read-email user-read-private\"\nsp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,\n            client_secret=SPOTIPY_CLIENT_SECRET,\n            redirect_uri=SPOTIPY_REDIRECT_URI,\n            scope=scope))\nclass SpotifyService:\n    likedSongs:List[TrackData]=[]",
+        "detail": "services.Spotify",
+        "documentation": {}
+    },
+    {
+        "label": "SPOTIPY_CLIENT_SECRET",
+        "kind": 5,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "SPOTIPY_CLIENT_SECRET =  os.getenv('SPOTIPY_CLIENT_SECRET')\nSPOTIPY_REDIRECT_URI = os.getenv('SPOTIPY_REDIRECT_URI')\nscope = \"user-modify-playback-state user-read-playback-state playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-modify user-library-read user-read-email user-read-private\"\nsp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,\n            client_secret=SPOTIPY_CLIENT_SECRET,\n            redirect_uri=SPOTIPY_REDIRECT_URI,\n            scope=scope))\nclass SpotifyService:\n    likedSongs:List[TrackData]=[]\n    @classmethod",
+        "detail": "services.Spotify",
+        "documentation": {}
+    },
+    {
+        "label": "SPOTIPY_REDIRECT_URI",
+        "kind": 5,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "SPOTIPY_REDIRECT_URI = os.getenv('SPOTIPY_REDIRECT_URI')\nscope = \"user-modify-playback-state user-read-playback-state playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-modify user-library-read user-read-email user-read-private\"\nsp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,\n            client_secret=SPOTIPY_CLIENT_SECRET,\n            redirect_uri=SPOTIPY_REDIRECT_URI,\n            scope=scope))\nclass SpotifyService:\n    likedSongs:List[TrackData]=[]\n    @classmethod\n    def playSong(cls, song:str):",
+        "detail": "services.Spotify",
+        "documentation": {}
+    },
+    {
+        "label": "scope",
+        "kind": 5,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "scope = \"user-modify-playback-state user-read-playback-state playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-modify user-library-read user-read-email user-read-private\"\nsp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,\n            client_secret=SPOTIPY_CLIENT_SECRET,\n            redirect_uri=SPOTIPY_REDIRECT_URI,\n            scope=scope))\nclass SpotifyService:\n    likedSongs:List[TrackData]=[]\n    @classmethod\n    def playSong(cls, song:str):\n        print(song)",
+        "detail": "services.Spotify",
+        "documentation": {}
+    },
+    {
+        "label": "sp",
+        "kind": 5,
+        "importPath": "services.Spotify",
+        "description": "services.Spotify",
+        "peekOfCode": "sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,\n            client_secret=SPOTIPY_CLIENT_SECRET,\n            redirect_uri=SPOTIPY_REDIRECT_URI,\n            scope=scope))\nclass SpotifyService:\n    likedSongs:List[TrackData]=[]\n    @classmethod\n    def playSong(cls, song:str):\n        print(song)\n        devices = sp.devices()",
+        "detail": "services.Spotify",
         "documentation": {}
     },
     {
@@ -510,8 +1030,17 @@
         "kind": 6,
         "importPath": "strategies.PlayMusic",
         "description": "strategies.PlayMusic",
-        "peekOfCode": "class PlayMusic (Strategy):\n    @classmethod\n    def isAppropriate(cls:'PlayMusic') -> bool:\n        return cls.searchWord(Chat.getMessage(len(Chat.messages)-2),'MUSIC' ) and  cls.searchWord( Chat.getLastMessage() ,'Bien') \n    @classmethod\n    def run():\n        pass",
+        "peekOfCode": "class PlayMusic (Strategy):\n    @classmethod\n    def isAppropriate(cls) -> bool:\n        return cls.searchWord(Chat.getMessage(len(Chat.messages)-2), 'MUSICA') and  cls.searchWord(Chat.getLastMessage(), 'BIEN') \n    @classmethod\n    def run(cls):\n        SpotifyService.playSong(\n            SpotifyService.likedSongs[math.floor(random.random()*len(SpotifyService.likedSongs))]['uri']\n            )\n        return 'playing song'",
         "detail": "strategies.PlayMusic",
+        "documentation": {}
+    },
+    {
+        "label": "runConversatio",
+        "kind": 2,
+        "importPath": "tasks.Conversation",
+        "description": "tasks.Conversation",
+        "peekOfCode": "def runConversation (text:str, engine:Engine):\n   Chat.addMessage('user',text)\n   response = GeneralBehavior.respond()\n   mute_mic()\n   engine.say(response)\n   engine.runAndWait()\n   sleep(1)\n   unmute_mic()",
+        "detail": "tasks.Conversation",
         "documentation": {}
     },
     {
@@ -773,42 +1302,6 @@
         "description": "venv.Scripts.pywin32_testall",
         "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
         "detail": "venv.Scripts.pywin32_testall",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def main():\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',\n                        help=\"Don't use the english model.\")\n    parser.add_argument(\"--energy_threshold\", default=1000,\n                        help=\"Energy level for mic to  detect.\", type=int)\n    parser.add_argument(\"--record_timeout\", default=2,",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "model_size",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "model_size = \"large-v3\"\nimport torch\nimport requests\nimport pyttsx3\nfrom datetime import datetime, timedelta\nfrom queue import Queue\nfrom time import sleep\nfrom sys import platform\nfrom mic_control import mute_mic, unmute_mic\nfrom utils.ignore_hashtags import ignoreHasthags",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "engine = pyttsx3.init()\nengine.setProperty(\"voice\", \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0\")\nengine.setProperty(\"rate\",205)\nmessages = [{\"role\":\"system\", \"content\":\"Siempre contestaré en español. Mi nombre es pepeue\"},]\ndef main():\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "messages",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "messages = [{\"role\":\"system\", \"content\":\"Siempre contestaré en español. Mi nombre es pepeue\"},]\ndef main():\n    unmute_mic()\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--model\", default=\"tiny\", help=\"Model to use\",\n                        choices=[\"tiny\", \"base\", \"small\", \"medium\", \"large\"])\n    parser.add_argument(\"--non_english\", action='store_true',\n                        help=\"Don't use the english model.\")\n    parser.add_argument(\"--energy_threshold\", default=1000,\n                        help=\"Energy level for mic to  detect.\", type=int)",
-        "detail": "main",
         "documentation": {}
     },
     {

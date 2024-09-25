@@ -7,5 +7,4 @@ from strategies.PlayMusic import PlayMusic
 class GeneralBehavior(Behavior.Behavior):
     pass
 
-GeneralBehavior.addStrategy(PlayMusic)
 GeneralBehavior.addStrategy(AskToLLM)

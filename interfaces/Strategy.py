@@ -1,13 +1,20 @@
+from abc import ABC, abstractmethod
 import re
 
 
-class Strategy:
+class Strategy(ABC):
+    
     @classmethod
-    def isAppropriate() -> bool:
+    @abstractmethod
+    def isAppropriate(cls) -> bool:
         pass
+    
+    @abstractmethod
     @classmethod
-    def run():
+    def run(cls) -> str:
         pass
+    
+    @abstractmethod
     @classmethod
-    def searchWord (string:str, word:str) -> bool:
-        return re.search(rf'\b{word}\b', string, re.IGNORECASE)
+    def searchWord (cls,string:str, word:str) -> bool:
+        return (re.search(rf'\b{word}\b', string, re.IGNORECASE) is not None)
